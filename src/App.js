@@ -10,7 +10,7 @@ const App = () => {
     {id: 3, title: 'Refresh', dateCreated: new Date(), completed: false}
   ])
 
-  // toggle complete
+  // toggle task complete
   const toggleComplete = (id) => {
     setTodos(todos.map(todo => {
       if (todo.id === id) {
@@ -20,11 +20,19 @@ const App = () => {
     }))
   }
 
+  // delete task
+  const deleteTask = (id) => {
+    setTodos(todos.filter(todo => todo.id !== id))
+  }
+
   return (
     <>
       <Header/>
       <div className="main-section">
-        <Todos todos={todos} toggleComplete={toggleComplete}/>
+        <Todos todos={todos} 
+          toggleComplete={toggleComplete}
+          deleteTask={deleteTask}
+        />
       </div>
     </>
   );

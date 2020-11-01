@@ -53,17 +53,6 @@ input, button, select {
   margin: 0 1rem;
 }
 
-.todo .delete-task {
-  cursor: pointer;
-  text-align: right;
-  font-size: 1.15rem;
-}
-
-.todo .delete-task:hover {
-  color: #f44336;
-  transform: scale(1.1);
-}
-
 .todo .todo-info > :first-child{
   margin-bottom: 5px;
 }
@@ -71,4 +60,10 @@ input, button, select {
 .todo .todo-info > :last-child{
   font-size: 0.9rem;
   color: #777;
+}
+
+.todo .delete-task:hover {
+  transform: scale(1.1);
+  color: #f44336 !important;
+  border: 1px solid #f44336 !important;
 }
