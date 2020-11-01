@@ -1,5 +1,6 @@
 :root {
-  --font-primary: Tahoma, Verdana, 'Trebuchet MS';
+  --font-primary: 'Trebuchet MS', Verdana, Tahoma;
+  --color-primary: #333;
 }
 
 * {
@@ -8,6 +9,7 @@
 
 body {
   font-family: var(--font-primary);
+  color: var(--color-primary);
   margin: 0;
 }
 
@@ -20,4 +22,53 @@ input, button, select {
 .header {
   text-align: center;
   margin: 3.5rem 0 2rem;
+}
+
+.main-section {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.main-section > div {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0.5rem
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 7.5px 0;
+}
+
+.todo > *{
+  flex-grow: 0;
+}
+
+.todo .todo-info {
+  flex-grow: 4;
+  margin: 0 1rem;
+}
+
+.todo .delete-task {
+  cursor: pointer;
+  text-align: right;
+  font-size: 1.15rem;
+}
+
+.todo .delete-task:hover {
+  color: #f44336;
+  transform: scale(1.1);
+}
+
+.todo .todo-info > :first-child{
+  margin-bottom: 5px;
+}
+
+.todo .todo-info > :last-child{
+  font-size: 0.9rem;
+  color: #777;
 }
