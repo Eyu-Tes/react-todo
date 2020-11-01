@@ -62,8 +62,47 @@ input, button, select {
   color: #777;
 }
 
-.todo .delete-task:hover {
+.btn {
+  height: 30px;
+  background-color: transparent;
+  color: #555;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  padding: 0 10px;
+  font-weight: 600; 
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color:  rgba(150, 132, 0, 1);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  border-color: rgba(150, 132, 0, 1);
+  color: rgba(150, 132, 0, 1);
+  background-color: #fff;
+}
+
+.todo #delete-task:hover {
   transform: scale(1.1);
   color: #f44336 !important;
   border: 1px solid #f44336 !important;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0 rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin-bottom: 1rem;
 }
