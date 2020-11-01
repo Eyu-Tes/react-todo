@@ -1,9 +1,10 @@
+import Header from './components/layout/Header'
 import './App.css';
 
 const App = () => {
   return (
     <>
-      <h1>Todo App</h1>
+      <Header/>
     </>
   );
 }

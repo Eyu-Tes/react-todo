@@ -16,3 +16,8 @@ input, button, select {
   box-shadow: none !important;
   outline: none !important;
 }
+
+.header {
+  text-align: center;
+  margin: 3.5rem 0 2rem;
+}
